@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import PlayerInput from './PlayerInput';
 
 export default class Battle extends Component {
   render() {
     return (
-      <h1>Battle</h1>
+      <div className='row'>
+        <PlayerInput label='PlayerOne' />
+        <PlayerInput label='PlayerTwo' />
+      </div>
     )
   }
 }
